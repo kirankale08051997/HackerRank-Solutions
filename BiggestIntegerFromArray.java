@@ -10,16 +10,16 @@ public class BiggestIntegerFromArray {
     }
 
     public static int BiggestInteger(Scanner sc, int[] array) {
-        int Big = array[0];
+        int Biggest = array[0];
         for (int i = 0; i < array.length; i++) {
             array[i] = sc.nextInt();
         }
         sc.close();
         for (int j = 1; j < array.length; j++) {
-            if (array[j] > Big)
-                Big = array[j];
+            if (array[j] > Biggest)
+                Biggest = array[j];
         }
-        return Big;
+        return Biggest;
 
     }
 }
